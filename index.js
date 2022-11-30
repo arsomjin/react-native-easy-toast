@@ -15,7 +15,7 @@ import {
   Text
 } from 'react-native';
 
-import { ViewPropTypes as RNViewPropTypes } from 'deprecated-react-native-prop-types';
+import { ViewPropTypes as RNViewPropTypes, TextPropTypes } from 'deprecated-react-native-prop-types';
 
 import PropTypes from 'prop-types';
 const ViewPropTypes = RNViewPropTypes || View.propTypes;
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
 Toast.propTypes = {
   style: ViewPropTypes.style,
   position: PropTypes.oneOf(['top', 'center', 'bottom']),
-  textStyle: Text.propTypes.style,
+  textStyle: TextPropTypes.style,
   positionValue: PropTypes.number,
   fadeInDuration: PropTypes.number,
   fadeOutDuration: PropTypes.number,
